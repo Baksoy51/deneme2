@@ -1,0 +1,28 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="method calistirma">
+    <test name="belirli mehod calistirma">
+        <classes>
+            <class name="tests.day15_SoftAssert.C04_NegativeLoginTesti">
+                <methods>
+                    <include name="negativeTestEmailTest"></include>
+                </methods>
+            </class>
+            <class name="tests.day16_SmokeTest.C02_NegatifLoginTest">
+                
+                <methods>
+                    <!--day16 package'ındaki negative login class'ındaki
+           yanlisEmail testi dısındaki tüm method'ları çalıştırmak istersek -->
+                    
+                    <exclude name="yanlisEmailTesti"></exclude>
+                    
+                </methods>
+                
+            </class>
+        </classes>
+             <!--Method'ları secerkeen bır class ıcerısındeki
+            özellikle çalıştırılacak method'ları  ifade etmek istersek include
+            özellıkle calıştırılmayacak method'ları ifade etmek istersek exclude kullanırız
+            -->
+
+    </test>
+</suite>

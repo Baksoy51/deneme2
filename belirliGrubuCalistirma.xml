@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="grup calisma">
+    <test name="istenen grup calistirma">
+        
+        <!-- istetenene grubu calistirmak için o gruptaki test gruplarının işaretlenmiş 
+        olmasi gerekir -->
+        <groups>
+            <run>
+                <include name="minireg1">
+                    
+                </include>
+            </run>
+        </groups>
+        <packages>
+            <package name="tests.day14_testNGFramework"></package>
+        </packages>
+        
+    </test>
+</suite>
